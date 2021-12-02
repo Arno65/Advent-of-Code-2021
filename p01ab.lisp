@@ -57,5 +57,7 @@
     (princ (count-increases (sum-triplet *day1* '())))
     (princ #\newline)
     (princ "0K.")
+    (princ #\newline)
+    (princ #\newline)
 )
 

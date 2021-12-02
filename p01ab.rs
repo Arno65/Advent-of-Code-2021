@@ -42,7 +42,7 @@ fn sum_triplets(nl: Vec<i64>) -> Vec<i64> {
 fn main() {
     let filename = "data/inputDay01_2021.txt";
 
-    println!("\nAdvent of Code 2021 - day 1 - both parts in Rust");
+    println!("Advent of Code 2021 - day 1 - both parts in Rust");
 // read file
     let nums = load_from_file( filename );
 // work increasing numbers
