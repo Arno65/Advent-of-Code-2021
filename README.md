@@ -6,4 +6,4 @@ My main programming language is Haskell. I do some work in Swift. And I'm learni
 Day 1 has solutions in Haskell, (old school) BASIC, clisp, rust and swift.
 (The Haskell code has three different solutions for counting the measurement increases.) 
 
-Day 2 has solutions in Haskell, clisp and swift. (I'm working on a rust version.)
+Day 2 has solutions in Haskell, clisp, rust and swift.
