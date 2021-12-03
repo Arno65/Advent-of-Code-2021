@@ -50,7 +50,7 @@ main = do   putStrLn "Advent of Code 2021 - day 1 - both parts in Haskell"
             day1 <- map read <$> lines <$> readFile filename
             putStr   "The count of increased measurements is: "
             print $ countIncreases day1
-            putStr   "The count of increased triplets is: "
+            putStr   "The count of increased triplets is:     "
             print $ countIncreases $ sumTriplets day1
             putStrLn "0K.\n"
 

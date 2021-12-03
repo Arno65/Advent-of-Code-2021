@@ -53,7 +53,7 @@
     (princ "The count of increased measurements is: ")
     (princ (count-increases *day1*))
     (princ #\newline)
-    (princ "The count of increased triplets is: ")
+    (princ "The count of increased triplets is:     ")
     (princ (count-increases (sum-triplet *day1* '())))
     (princ #\newline)
     (princ "0K.")

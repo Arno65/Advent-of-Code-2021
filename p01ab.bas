@@ -24,7 +24,7 @@
 315 gosub 500
 320 print "Advent of Code 2021 - day 1 - both parts in BASIC" 
 330 print "The count of increased measurements is: ";c1
-340 print "The count of increased triplets is: ";c2
+340 print "The count of increased triplets is:     ";c2
 350 print "0K." : print
 360 rem End and exit the BASIC
 370 exit 

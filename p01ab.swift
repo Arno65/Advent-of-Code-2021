@@ -69,7 +69,7 @@ if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMa
         
         // Task Two 
         nCnt = countIncreases(for: sumTriplets (for: numbers))
-        print ( "The count of increased triplets is:  \(nCnt)")
+        print ("The count of increased triplets is:     \(nCnt)")
     }
     catch { print ("Read error?") }
 

@@ -50,8 +50,8 @@ fn main() {
 // work increasing triplets
     let c2 = count_increased( sum_triplets( (& nums).to_vec())); 
 
-    println!("The count of increased measurements is:  {}", c1);
-    println!("The count of increased triplets is: {}", c2);
+    println!("The count of increased measurements is: {}", c1);
+    println!("The count of increased triplets is:     {}", c2);
     println!("0K.\n");
 }
 
