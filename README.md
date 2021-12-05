@@ -11,7 +11,7 @@ Spoiler alert: All the code has the end results of the tasks in the comment sect
 Also notice that these end results are obtained with the puzzle inputs for my Advent-of-Code-2021 account.
 
 
-Day 1 has solutions in Haskell, (old school) BASIC, Common Lisp, Rust and Swift.
+Day 1 has solutions in Haskell, (old school) BASIC, Common Lisp, Rust and Swift.\n
 (The Haskell code has three different solutions for counting the measurement increases.) 
 
 Day 2 has solutions in Haskell, Common Lisp, Rust and Swift.
