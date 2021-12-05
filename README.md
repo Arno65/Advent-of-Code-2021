@@ -12,7 +12,6 @@ Also notice that these end results are obtained with the puzzle inputs for my Ad
 
 
 Day 1 has solutions in Haskell, (old school) BASIC, Common Lisp, Rust and Swift.
-
 (The Haskell code has three different solutions for counting the measurement increases.) 
 
 Day 2 has solutions in Haskell, Common Lisp, Rust and Swift.
