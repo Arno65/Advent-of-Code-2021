@@ -10,19 +10,17 @@ Solutions in languages like Swift, Rust, Python or whatever will be done for fun
 Spoiler alert: All the code has the end results of the tasks in the comment section at the start of the code.
 Also notice that these end results are obtained with the puzzle inputs for my Advent-of-Code-2021 account.
 
-
-Day 1 has solutions in Haskell, (old school) BASIC, Common Lisp, Rust and Swift. <br />
+Day 1 has solutions in Haskell, (old school) BASIC, Common Lisp, Rust and Swift.\
 (The Haskell code has three different solutions for counting the measurement increases.) 
 
 Day 2 has solutions in Haskell, Common Lisp, Rust and Swift.
 
-For the time being... for day 3 there is only a Haskell solution. 
+For the time being... for day 3 there is only a Haskell solution.\
 I'm working on a Common Lisp version. (Part 1 is working. It will be uploaded if part 2 is finished.)
 
 Day 4 has a Haskell solution.
 
-Day 5 has a Haskell solution.
+Day 5 has a Haskell solution.\
 For debug reasons the functions for drawing horizontal, vertical and diagonal lines are seperated.
 The code will run much faster if they are combined, but for this task the code is fast enough.
-
 
