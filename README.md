@@ -12,6 +12,7 @@ Also notice that these end results are obtained with the puzzle inputs for my Ad
 
 
 Day 1 has solutions in Haskell, (old school) BASIC, Common Lisp, Rust and Swift.
+
 (The Haskell code has three different solutions for counting the measurement increases.) 
 
 Day 2 has solutions in Haskell, Common Lisp, Rust and Swift.
@@ -22,6 +23,7 @@ I'm working on a Common Lisp version. (Part 1 is working. It will be uploaded if
 Day 4 has a Haskell solution.
 
 Day 5 has a Haskell solution.
+
 For debug reasons the functions for drawing horizontal, vertical and diagonal lines are seperated.
 The code will run much faster if they are combined, but for this task the code is fast enough.
 
