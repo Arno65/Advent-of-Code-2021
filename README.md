@@ -20,3 +20,9 @@ For the time being... for day 3 there is only a Haskell solution.
 I'm working on a Common Lisp version. (Part 1 is working. It will be uploaded if part 2 is finished.)
 
 Day 4 has a Haskell solution.
+
+Day 5 has a Haskell solution.
+For debug reasons the functions for drawing horizontal, vertical and diagonal lines are seperated.
+The code will run much faster if they are combined, but for this task the code is fast enough.
+
+
