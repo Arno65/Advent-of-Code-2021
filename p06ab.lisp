@@ -1,6 +1,6 @@
 ;;;;    Advent of Code 2021 - Day 6 task A & B
 ;;;;    Solutions in Lisp
-;;;;    Also solving in other languages like Haskell
+;;;;    Also solving in other languages like Haskell and Rust
 ;;;;    (Ter leering ende vermaeck...)
 ;;;;
 ;;;;    The number of lanternfish after  80 days is: 388739
