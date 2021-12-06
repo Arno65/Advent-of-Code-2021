@@ -23,10 +23,10 @@ Day 4 has a Haskell solution.
 
 Day 5 has a Haskell solution. There is a Common Lisp solution for part 1.\
 For debug reasons the functions for drawing horizontal, vertical and diagonal lines are seperated.
-The code will run much faster if they are combined, but for this task the code is fast enough.
+The code will run much faster if they are combined, but for this task the code is fast enough.\
 I'm not happy with my lisp code. I needed a lot of functions to parse the input file to the line coordinates.
 
-Day 6 has solutions in Haskell and Common Lisp.
+Day 6 has solutions in Haskell and Common Lisp.\
 I first started part 1 in Haskell with a slow and memory inefficient list expanding iteration function.
 That function is not used anymore but it's still present in the Haskell code. 
 
