@@ -96,7 +96,7 @@
     (princ (endless-lanternfish *iter1* *dcl*))
     (princ #\newline)
     
-    (princ "The number of lanternfish after  ")
+    (princ "The number of lanternfish after ")
     (princ *iter2*)
     (princ " days is: ")
     (princ (endless-lanternfish *iter2* *dcl*))
