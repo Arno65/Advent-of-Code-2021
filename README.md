@@ -26,7 +26,7 @@ For debug reasons the functions for drawing horizontal, vertical and diagonal li
 The code will run much faster if they are combined, but for this task the code is fast enough.\
 I'm not happy with my lisp code. I needed a lot of functions to parse the input file to the line coordinates.
 
-Day 6 has solutions in Haskell and Common Lisp.\
+Day 6 has solutions in Haskell, Common Lisp and Rust.\
 I first started part 1 in Haskell with a slow and memory inefficient list expanding iteration function.
 That function is not used anymore but it's still present in the Haskell code. 
 
