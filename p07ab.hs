@@ -1,6 +1,6 @@
 -- Advent of Code 2021 - Day 7 task A & B
 -- Solutions in Haskell
--- Also solving in other languages like ...
+-- Also solving in other languages like Lisp
 -- (Ter leering ende vermaeck...)
 --
 -- Determine the horizontal position that the crabs can align to using 

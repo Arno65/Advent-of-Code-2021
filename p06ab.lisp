@@ -24,13 +24,7 @@
 (defun string-to-digits-list (str)
     (mapcar #'to-int (remove #\, (coerce str 'list))))
 
-;;; Read data and convert to numbers list in sublist of size 4
-;;;
-;;; Like: ((259 377 259 599) (120 758 977 758) (2 4 10 12))
-;;;
-;;; The first being a vertical line from (259,377) to (259,599)
-;;; The second being a horizontal line from (120,758) to (977,758)
-;;; The third being a 45 degrees diagonal line from (2,4) to (10,12)
+;;; Read data and convert to numbers list
 (defun read-data (&optional (file "data/inputDay06_2021.txt"))
   "Returns the numerical data in FILE as a list."
   (with-open-file (data file)
