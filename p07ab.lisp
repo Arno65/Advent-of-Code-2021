@@ -134,10 +134,10 @@
     (princ "Advent of Code 2021 - day 7 - both parts in Lisp")
     (princ #\newline)
     (setq *cpl* (tally *day7*))         ;;; get Crabs position list
-    (princ "The minimum amount of fuel spend at part 1 is: ")
+    (princ "Calculated by rules part 1, the least amount of fuel spend is: ")
     (princ (minimum-fuel 1 *cpl*))      ;;; part 1
     (princ #\newline)    
-    (princ "The minimum amount of fuel spend at part 1 is: ")
+    (princ "Calculated by rules part 2, the least amount of fuel spend is: ")
     (princ (minimum-fuel 2 *cpl*))      ;;; part 2
     (princ #\newline)
     (princ "0K.")
