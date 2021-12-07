@@ -30,5 +30,6 @@ Day 6 has solutions in Haskell, Common Lisp and Rust.\
 I first started part 1 in Haskell with a slow and memory inefficient list expanding iteration function.
 That function is not used anymore but it's still present in the Haskell code. 
 
-Day 7 has a Haskell solution.
+Day 7 has solutions in Haskell and Common Lisp. \
+The Lisp solution has the same algorithm as the Haskell version and with the Common Lisp interpreter it is slow.
 
