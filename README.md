@@ -33,3 +33,5 @@ That function is not used anymore but it's still present in the Haskell code.
 Day 7 has solutions in Haskell and Common Lisp. \
 The Lisp solution has the same algorithm as the Haskell version and with the Common Lisp interpreter it is slow.
 
+Day 8 has a Haskell solution. \
+Part 2 took me multiple hours. The solution works 0K for this task but is not generic.
