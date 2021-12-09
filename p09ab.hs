@@ -107,11 +107,8 @@ getBasin minp maxp hl visited (x,y)
             nxtl4       = getBasin minp maxp hl' vl3 (x,y + 1)
             visited'    = usort $ nxtl4 ++ vl3
             
-productOfLargest :: Int -> [[(Int,Int)]] -> Int
-productOfLargest n bl = product $ take n bll
-    where
-        bll = reverse $ sort $ map length bl -- Basin sizes sorted from high to low
-        -- Here NO usort because list length may be equal in the product list
+productOfLargestBasins :: Int -> [[(Int,Int)]] -> Int
+productOfLargestBasins n = product . take n . reverse . sort . map length
 
 main :: IO ()
 main = do   putStrLn "Advent of Code 2021 - day 9 - both parts in Haskell"
@@ -122,6 +119,6 @@ main = do   putStrLn "Advent of Code 2021 - day 9 - both parts in Haskell"
 
             let basins = getBasins day9 lowPoints
             putStr "The product of the sizes of the three largest basins is: "
-            print $ productOfLargest nLargest basins
+            print $ productOfLargestBasins nLargest basins
             putStrLn "0K.\n"
 
