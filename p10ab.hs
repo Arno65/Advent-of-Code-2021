@@ -1,5 +1,6 @@
 -- Advent of Code 2021 - Day 10 task A & B
 -- Solutions in Haskell
+-- Also solving in other languages like Lisp
 -- (Ter leering ende vermaeck...)
 --
 -- The total syntax error score for corrupt strings is:     464991
