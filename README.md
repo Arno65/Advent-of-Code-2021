@@ -38,3 +38,8 @@ Part 2 took me multiple hours to solve and code. The solution works 0K for this 
 
 Day 9 has a Haskell solution. \
 My first 'flood fill' version for Part 2 way very very slow and memory consuming. I'm happy with the current solution.
+
+Day 10 has a Haskell solution.
+
+
+
