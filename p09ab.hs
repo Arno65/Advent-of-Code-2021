@@ -1,5 +1,6 @@
 -- Advent of Code 2021 - Day 9 task A & B
 -- Solutions in Haskell
+-- Also solving in other languages like Lisp
 -- (Ter leering ende vermaeck...)
 --
 -- The sum of the risk levels of all low points on your heightmap is: 591
