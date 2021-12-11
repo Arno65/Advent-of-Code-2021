@@ -41,5 +41,6 @@ My first 'flood fill' version for Part 2 was very slow and memory consuming. I'm
 
 Day 10 has solutions in Haskell and Common Lisp.
 
+Day 11 has a Haskell solution.
 
 
