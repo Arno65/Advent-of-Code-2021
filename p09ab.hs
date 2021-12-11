@@ -40,8 +40,8 @@ usort (e:rl) = usort smaller ++ [e] ++ usort bigger
 -- Part 1
 --
 -- (no checking for empty list)
-selectLowpoints :: [[Int]] -> [(Int,(Int,Int))]
-selectLowpoints lpl = [  (lpl !! y !! x, (x,y)) |    
+findLowpoints :: [[Int]] -> [(Int,(Int,Int))]
+findLowpoints lpl = [  (lpl !! y !! x, (x,y)) |    
                             x <- [fst minp..fst maxp], 
                             y <- [snd minp..snd maxp],
                             lpl !! y !! x < border, -- 9 is never a low point
@@ -113,12 +113,12 @@ productOfLargestBasins n = product . take n . reverse . sort . map length
 main :: IO ()
 main = do   putStrLn "Advent of Code 2021 - day 9 - both parts in Haskell"
             day9 <- map parseHeightmap <$> lines <$> readFile filename
-            let lowPoints = selectLowpoints day9
+            let lowPoints = findLowpoints day9
             putStr "The sum of the risk levels of all low points on your heightmap is: "
             print $ sum $ calculateRisklevels lowPoints
 
             let basins = getBasins day9 lowPoints
-            putStr "The product of the sizes of the three largest basins is: "
+            putStr "The product of the sizes of the three largest basins is:           "
             print $ productOfLargestBasins nLargest basins
             putStrLn "0K.\n"
 
