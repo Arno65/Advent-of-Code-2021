@@ -14,7 +14,8 @@ module AoC2021d13ab where
 
 import Data.List.Split  -- (splitOn)
 
-type Point = (Int,Int)
+type Point  = (Int,Int)
+type Points = [Point]
 
 filename = "data/inputDay13_2021.txt"
 
@@ -24,10 +25,11 @@ cFoldVertical   = 'x'
 cFoldHorizotal  = 'y'
 cIs             = '='
 cEmpty          = ' '
-sPlot           = "#"
+cPlot           = '#'
+sCR             = "\n"
 
--- Some helpers
---
+
+-- This function will erase all duplicate points
 -- quick sort but only store unique elements
 -- So: [3,5,2,4,3,1,1,2,3,5,2,6,3,4] -> [1,2,3,4,5,6]
 usort :: Ord a => [a] -> [a]
@@ -37,14 +39,8 @@ usort (e:rl) = usort smaller ++ [e] ++ usort bigger
         smaller = filter (<e) rl
         bigger  = filter (>e) rl 
 
--- Print list of strings 
-printStrings :: [String] -> IO ()
-printStrings []     = do return ()
-printStrings (l:ls) = do putStrLn l
-                         printStrings ls
-
 -- Parse from input strings to two seperate lists of points 
-parse :: [String] -> ([Point],[Point])
+parse :: [String] -> (Points,Points)
 parse = parse' ([],[])
     where
         parse' dataset        []            = dataset
@@ -59,17 +55,17 @@ parse = parse' ([],[])
                     foldnr      = read $ tail $ dropWhile (/=cIs) line
 
 -- Functions for a 1x fold (horizontal or vertical)
-foldPaper1x :: [Point] -> Point -> [Point]
+foldPaper1x :: Points -> Point -> Points
 foldPaper1x points (fx,fy)  | fx == 0   = foldHorizontal fy points
                             | otherwise = foldVertical   fx points
 
 -- The one time horizontal fold
-foldHorizontal :: Int -> [Point] -> [Point]
+foldHorizontal :: Int -> Points -> Points
 foldHorizontal fy points =
     usort [ (x,ny )| (x,y) <- points, let ny = if y > fy then 2*fy-y else y ]
 
 -- The one time vertical fold
-foldVertical :: Int -> [Point] -> [Point]
+foldVertical :: Int -> Points -> Points
 foldVertical fx points = 
     usort [ (nx,y )| (x,y) <- points, let nx = if x > fx then 2*fx-x else x ]
 
@@ -81,23 +77,18 @@ foldVertical fx points =
 -- In this digital world the boundary is not on the physics of paper.
 -- So let's fold & fold...
 -- For this task I need 12 folds. 0K.
-foldPaper :: [Point] -> [Point] -> [Point]
+foldPaper :: Points -> Points -> Points
 foldPaper points []             = points
 foldPaper points (fold:rfolds)  = foldPaper (foldPaper1x points fold) rfolds
 
 -- After folding is done this function wil plot a '#' for every point
 -- In this task a eight capital letter code is shown
-makePlotString :: [Point] -> [String]
-makePlotString points = insertPoints points lines
+display :: Points -> String
+display points = concat $ map (\s -> s ++ sCR) sl
     where
         (mx,my) = ( maximum $ map fst points, maximum $ map snd points )
-        lines   = take (my+1) ( repeat (take (mx+1) $ repeat cEmpty))
-        insertPoints []     lines = lines
-        insertPoints (p:ps) lines = insertPoints ps (insertPoint p lines)
-        insertPoint (x,y) lines = take y lines ++
-                                  [take x yline ++ sPlot ++ drop (x+1) yline] ++ 
-                                  drop (y+1) lines
-            where yline = lines !! y
+        sl = [[ if (elem (x,y) points) then cPlot else cEmpty | x <- [0..mx]] | y <- [0..my]]
+
 
 main :: IO ()
 main = do   putStrLn "Advent of Code 2021 - day 13 - both parts in Haskell"
@@ -106,7 +97,8 @@ main = do   putStrLn "Advent of Code 2021 - day 13 - both parts in Haskell"
             putStr "The number of points visible after one fold is: "
             print $ length $ foldPaper1x points (folds !! 0)
             putStrLn "The code visible after all the folds is: "
-            let plotStr = makePlotString $ foldPaper points folds
-            printStrings plotStr
+            putStr $ display $ foldPaper points folds
             putStrLn "0K.\n"
+
+
 
