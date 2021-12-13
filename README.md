@@ -43,6 +43,7 @@ Day 10 has solutions in Haskell and Common Lisp.
 
 Day 11 has a Haskell solution.
 
-This I'm going to recode my (ugly) Haskell solution day 12. But that will be done sometime in 2022...
+The (ugly) Haskell code for day 12 will be recoded completely. \
+That will be done sometime in 2022...
 
 Day 13 has a Haskell solution.
