@@ -39,11 +39,11 @@ Part 2 took me multiple hours to solve and code. The solution works 0K for this 
 Day 9 solutions in Haskell and Common Lisp. (In Lisp there is only code for part 1.) \
 My first 'flood fill' version for Part 2 was very slow and memory consuming. I'm happy with the current solution.
 
-Day 10 has solutions in Haskell and Common Lisp.
-
+Day 10 has solutions in Haskell and Common Lisp. \
 Day 11 has a Haskell solution.
 
 The (ugly) Haskell code for day 12 will be recoded completely. \
 That will be done sometime in 2022...
 
-Day 13 has a Haskell solution.
+Day 13 has a Haskell solution. \
+Day 14 has a Haskell solution.
