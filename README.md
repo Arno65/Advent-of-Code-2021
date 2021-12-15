@@ -47,3 +47,7 @@ That will be done sometime in 2022...
 
 Day 13 has a Haskell solution. \
 Day 14 has a Haskell solution.
+
+Day 15 has a Swift solution. \
+I have a Haskell solution, fast enough for part 1 but much too slow for part 2.
+
