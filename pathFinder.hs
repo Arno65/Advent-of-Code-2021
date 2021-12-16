@@ -1,4 +1,4 @@
--- For Advent of Code 2021 - Day 12 task A & B a create graph function was neede
+-- For Advent of Code 2021 - Day 12 task A & B a "create graph function" is needed
 -- This code will be a more 'generic' version, for any given set of links
 -- An input line has to look like
 -- "AB-xy" or "from -> to" or "1,2" or "celA to celB"
@@ -15,24 +15,27 @@
 -- 
 module PathFinder where
 
-import Data.List.Split  -- (splitOn)
+import Data.List.Split (splitOn)
 
--- This type will be used for data to 
+-- Type 'a' will need Eq and Show. 
+-- In this verion 'String' is used.
 type Link  a = (a,a)
 type Links a = [Link a]
 type Path  a = (a, [a])
 type Paths a = [Path a]
 
--- 
 filename = "../data/inputDay12_2021.txt"
 
+-- Split string, start and end point strings.
 sSplit  = "-" 
 sStart  = "start"
 sEnd    = "end"
 
+-- Here the input lines are split into a 'from' part and a 'to' part (per line).
 parse :: Eq a => [a] -> [a] -> ([a], [a])
 parse splitStr line = (s1,s2) where (s1:s2:_) = splitOn splitStr line
 
+-- Graph creation
 graph :: Eq a => Links a -> Paths a
 graph = graph' []
     where 
@@ -52,12 +55,11 @@ addToPath cp (p1,p2)
             cpr1 = filter (\(c,_) -> c /= p1) cp
             ncp  = cpr1 ++ [(p1,ppt1)]
 
-
--- type Link  a = (a,a)
--- type Links a = [Link a]
--- type Path  a = (a, [a])
--- type Paths a = [Path a]
-
+-- Print list -> one element each line
+printList :: Show a => [a] -> IO ()
+printList []     = do  return ()
+printList (l:ls) = do  print l
+                       printList ls
 
 main :: IO ()
 main = do   putStrLn "Path finder in Haskell\n"
@@ -65,20 +67,8 @@ main = do   putStrLn "Path finder in Haskell\n"
             let links = map (parse sSplit) dataset
             let gd = graph links
 
-            -- 
+            putStrLn "The input file with all the links:"
             print links
-            -- 
+            putStrLn "\nThe processed links into graph data:"
             printList gd
-
-        
             putStrLn "\n0K.\n"
-
-
-
-
--- Print list -> one element each line
-printList :: Show a => [a] -> IO ()
-printList []     = do  return ()
-printList (l:ls) = do  print l
-                       printList ls
-
