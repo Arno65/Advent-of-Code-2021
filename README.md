@@ -43,7 +43,7 @@ Day 10 has solutions in Haskell and Common Lisp. \
 Day 11 has a Haskell solution.
 
 The (ugly) Haskell code for day 12 will be recoded completely. \
-(That will be done sometime in 2022...)
+(That will be done sometime in 2022...) \
 The program 'pathFinder.hs' for building the graph is good enough for sharing.
 
 Day 13 has a Haskell solution. \
