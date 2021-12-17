@@ -54,3 +54,5 @@ I have a Haskell solution, fast enough for part 1 but much too slow for part 2.
 
 Day 16 has a Haskell solution. \
 Evaluation and pattern matching work so good together.
+
+Day 17 has a Haskell solution. 
