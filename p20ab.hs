@@ -43,13 +43,13 @@ indexValuePixel (x,y) g = fromDigits 2 [ g !! (y+dy) !! (x+dx) | dy <- [-1..1], 
 
 --
 workGrid :: Int -> Line -> Grid -> Grid
-workGrid step a g = [[ a !! (indexValuePixel (x,y) eg) | x <- [1..mx-1]] | y <- [1..my-1]]
+workGrid step a g = [[ a !! (indexValuePixel (x,y) eg) | x <- [1..mx]] | y <- [1..my]]
     where
         -- First some testing for infinity and beyond...
         fill = if (a !! 0 == 0) || (mod step 2 == 0) then pixelOff else pixelOn
         eg   = expandGrid fill g 
-        mx   = length (head eg) - 1
-        my   = length eg - 1
+        mx   = length (head eg) - 2
+        my   = length eg - 2
         
 -- Expand the grid with TWO 'pixel' lit border
 expandGrid :: Pixel -> Grid -> Grid
