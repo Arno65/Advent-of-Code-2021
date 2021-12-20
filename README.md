@@ -55,4 +55,9 @@ I have a Haskell solution, fast enough for part 1 but much too slow for part 2.
 Day 16 has a Haskell solution. \
 Evaluation and pattern matching work so good together.
 
-Day 17 has a Haskell solution. 
+Day 17 has a Haskell solution.
+
+Both solutions for day 18 and day 19 need rework and a lot of cleaning up. \
+(Recoding will be done sometime in 2022.)
+
+Day 20 has a Haskell solution.
