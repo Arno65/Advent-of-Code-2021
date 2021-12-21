@@ -60,4 +60,5 @@ Day 17 has a Haskell solution.
 Both solutions for day 18 and day 19 need rework and a lot of cleaning up. \
 (Recoding will be done sometime in 2022.)
 
-Day 20 has a Haskell solution.
+Day 20 has a Haskell solution. \
+Day 21 has a Haskell solution. 
