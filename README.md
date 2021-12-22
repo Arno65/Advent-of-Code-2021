@@ -64,4 +64,4 @@ Day 20 has a Haskell solution. \
 Day 21 has a Haskell solution. 
 
 For part 1 of day 22 there is a brute force (and still fast) solution in Swift. \
-I like to have (smart) soltutions in Haskell and I'm still strugling with that.
+I like to have a (smart) soltution in Haskell but I'm still strugling with a that.
