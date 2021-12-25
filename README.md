@@ -68,4 +68,4 @@ I like to have a (smart) soltution in Haskell but I'm still strugling with a tha
 
 The solutions for day 23 where done by hand. (Only used some code to sum the costs.) 
 
-
+Day 25 has a Haskell solution.
