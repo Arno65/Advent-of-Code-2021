@@ -8,7 +8,7 @@ The language I want to learn the most is Lisp so a second solution will be in Co
 Solutions in languages like Swift, Rust, Python or whatever will be done for fun and if there is any spare time left.
 
 Spoiler alert: All the code has the end results of the tasks in the comment section at the start of the code.
-Also notice that these end results are obtained with the puzzle inputs for my Advent-of-Code-2021 account.
+Also notice that these end results are obtained with the puzzle inputs from my Advent-of-Code-2021 account.
 
 Day 1 has solutions in Haskell, (old school) BASIC, Common Lisp, Rust and Swift.\
 (The Haskell code has three different solutions for counting the measurement increases.) 
